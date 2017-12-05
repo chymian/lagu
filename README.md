@@ -1,0 +1,2 @@
+# lagu
+LaGu Mining Rig
