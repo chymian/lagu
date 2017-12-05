@@ -1,0 +1,63 @@
+#!/bin/bash
+
+BASEDIR=$HOME/lagu
+PRG=cpuminer
+
+useage() {
+echo usage $0 command
+echo "command:
+	start	Start mining
+	stop	Stop mining
+	enable	Enable autostart & Watchdog
+	disable Disable autostart & Watchdog
+"
+}
+
+start() {
+	source $BASEDIR/local.conf
+
+	# get actual config, if remote.conf is configured
+	if [ -f $BASEDIR/remote.conf ] && {
+		wget -ci ~/lagu/remote.conf -O $BASEDIR/lagu.conf
+		source $BASEDIR/lagu.conf
+	}
+
+
+	APP=$(ps aux | grep -v grep | grep $PRG)
+	if [ -z "$APP" ]; then
+		echo "Restart miner"
+		screen -c $BASEDIR/bin/cpuminer -a $ALG -u $WALLET -o ${PROT}${POOL} -p $POOLPASSWD \
+			$SYS $APIBIND $APIALLOW $DEBUG $NOCOLOR
+	fi
+}
+
+stop() {
+	APP=$(ps aux | grep -v grep | grep $PRG)
+	killall -15 $PRG
+}
+
+enable() {
+	echo "*/5 * * * * $BASEDIR/mining enable
+@reboot $BASEDIR/mining enable" | crontab -
+}
+
+disable() {
+	echo "#*/5 * * * * $BASEDIR/mining enable
+#@reboot $BASEDIR/mining enable " | crontab -
+}
+
+case $1 in
+	start) start
+		;;
+
+	stop) stop
+		;;
+
+	enable) enable
+		;;
+
+	disable) disable
+		;;
+esac
+
+exit 0
