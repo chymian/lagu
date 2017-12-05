@@ -27,7 +27,7 @@ start() {
 	APP=$(ps aux | grep -v grep | grep $PRG)
 	if [ -z "$APP" ]; then
 		echo "Restart miner"
-		screen -dmS miner $BASEDIR/bin/cpuminer -a $ALG -u $WALLET -o ${PROT}${POOL1} -p $POOLPASSWD $SYS $APIBIND $APIALLOW $DEBUG $NOCOLOR || exit 2
+		screen -dmS miner $BASEDIR/bin/cpuminer -a $ALG -u $WALLET -o ${PROT}${POOL1} -p $POOLPASSWD1 -t $THREADS $SYS $APIBIND $APIALLOW $DEBUG $NOCOLOR || exit 2
 	fi
 }
 
@@ -49,7 +49,7 @@ disable() {
 update() {
 	cd $BASEDIR
 	git pull
-	echo -n Updated SW, restarting miner...
+	echo Updated SW, restarting miner...
 	stop
 	start
 	echo done.
