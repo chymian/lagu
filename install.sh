@@ -8,8 +8,8 @@ echo "PATH=\$PATH:$BASEDIR/bin" >> ~/.profile
 
 # create initial configs
 cd $BASEDIR
-cp template/local.conf .
-cp template/remote.conf .
+cp templates/local.conf .
+cp templates/remote.conf .
 
 
 # enable mining watchdog
