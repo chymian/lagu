@@ -97,5 +97,5 @@ chown -R lagu. .
 su -l -c lagu/lib/install.sh lagu
 
 rm $NOT_EXECUTED
-
+reboot
 exit 0
