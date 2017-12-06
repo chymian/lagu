@@ -19,7 +19,8 @@ start() {
 
 	# get actual config, if remote.conf is configured
 	if [ -f $BASEDIR/remote.conf ]; then
-		wget -ci ~/lagu/remote.conf -O $BASEDIR/lagu.conf
+		mv $BASEDIR/lagu.conf $BASEDIR/lagu.conf.old
+		wget -i $BASEDIR/remote.conf -O $BASEDIR/lagu.conf
 		source $BASEDIR/lagu.conf
 	fi
 
