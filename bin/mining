@@ -49,10 +49,8 @@ disable() {
 update() {
 	cd $BASEDIR
 	git pull
-	echo Updated SW, restarting miner...
 	stop
 	start
-	echo done.
 }
 
 case $1 in
