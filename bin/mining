@@ -8,6 +8,7 @@ echo usage $0 command
 echo "command:
 	start	Start mining
 	stop	Stop mining
+	restart Restart mining
 	enable	Enable autostart & Watchdog
 	disable Disable autostart & Watchdog
 	update	Update lagu-rig sw from git
@@ -35,6 +36,11 @@ start() {
 stop() {
 	APP=$(ps aux | grep -v grep | grep $PRG)
 	killall -15 $PRG
+}
+
+restart() {
+	stop
+	start
 }
 
 enable() {
