@@ -37,13 +37,13 @@ stop() {
 }
 
 enable() {
-	echo "*/5 * * * * $BASEDIR/mining start
-@reboot $BASEDIR/mining start" | crontab -
+	echo "*/5 * * * * $BASEDIR/bin/mining start
+@reboot $BASEDIR/bin/mining start" | crontab -
 }
 
 disable() {
-	echo "#*/5 * * * * $BASEDIR/mining start
-#@reboot $BASEDIR/mining start " | crontab -
+	echo "#*/5 * * * * $BASEDIR/bin/mining start
+#@reboot $BASEDIR/bin/mining start " | crontab -
 }
 
 update() {
