@@ -10,7 +10,7 @@ In this repository is the Miner (see https://github.com/tpruvot/cpuminer-multi) 
 config-file from an central location on every start of the miner, stop mining and enable/disable a watchdog-style process-mgmt.  
 
 ## Preparing the microSD card  
-The Image can be downloaded from http://lagu.eb8.org/lagu/  
+The Image can be downloaded from [here](http://lagu.eb8.org/lagu/)  
 Unizp it with 7zip and use etcher or other SW to write it to an microSD card.
 
 
@@ -24,7 +24,7 @@ The root password is set to ```.pw_lagu```. I's recommended to change both passw
 You can ssh to your SBC (Windows user use i.e. PUTTY) and adapt the config.
 
 ### Configration Template
-Download the config-file from http://lagu.eb8.org/lagu/template.conf to your workstation, change POOLx and WALLETx to your needs.  
+Download the config-file from [here](http://lagu.eb8.org/lagu/template.conf) to your workstation, change POOLx and WALLETx to your needs.  
 HINT: at the moment, only POOL1, POOLPASSWD1 and WALLET1 are used.
 
 
