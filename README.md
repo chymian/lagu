@@ -12,7 +12,7 @@ The miner autostarts on boot and starts every 5 minutes if it was stopped/or has
 
 ## Preparing the microSD card  
 The Image can be downloaded from [here](http://lagu.eb8.org/lagu/).  
-Unizp it with 7zip and use etcher or other SW to write it to an microSD card.
+Unzip it with 7zip and use etcher or other SW to write it to an microSD card with at least 1G.
 
 
 ## Configuration
