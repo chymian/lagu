@@ -57,7 +57,7 @@ cd lagu
 nano remote.conf
 ```
 
-The miner first reads ```local.conf```, and then, if ```remote.conf``` exists, downloads the conf file from the link in  
+The miner first reads ```local.conf``` (if it exists) and then, if ```remote.conf``` exists, downloads the conf file from the link in  
 ```remote.conf``` to ```lagu.conf``` and reads that, overwriting the "defaults" in local.conf.
 
 
