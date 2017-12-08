@@ -26,10 +26,13 @@ You can ssh to your SBC (Windows user use i.e. PUTTY) and adapt the config.
 Download the config-file from http://lagu.eb8.org/lagu/template.conf to your workstation, change POOLx and WALLETx to your needs.  
 HINT: at the moment, only POOL1, POOLPASSWD1 and WALLET1 are used.
 
+
 #### If you have only one or two SBCs or no access to an webserver  
-* delete the file remote.conf  
-* delete the file lagu.conf  
+on every SBC:  
+* delete the file lagu/remote.conf  
+* delete the file lagu/lagu.conf  
 * copy your template to lagu/local.conf  
+
 Without an remote.conf, the miner don't try to download a remote config-file.
 
 
