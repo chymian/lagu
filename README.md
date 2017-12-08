@@ -8,6 +8,7 @@ Others to follow.
 
 In this repository is the Miner (see https://github.com/tpruvot/cpuminer-multi) and a little code around it for downloading a 
 config-file from an central location on every start of the miner, stop mining and enable/disable a watchdog-style process-mgmt.  
+The miner autostarts on boot and starts every 5 minutes if it was stoped/or has crashed.
 
 ## Preparing the microSD card  
 The Image can be downloaded from [here](http://lagu.eb8.org/lagu/).  
@@ -95,8 +96,8 @@ command:
 ```
 
 ## Connection to miners Output  
-To see the output an log of the miner, you can connect to the screen session with ```screen -r```. 
-To leave the session, press ```<CTRL> -A D```  
-If you use ```<CTRL>-C```, the miner will stop.  It will start again after 5 min, if you didn't ```mining disable```.  
+To see the output of the miner, you can connect to the screen session with ```screen -r```.  
+To leave the session, press ```<CTRL>-A D```  
+If you use ```<CTRL>-C```, the miner will stop. It will start again after 5 min, if you didn't disable it with ```mining disable```.  
 
 
