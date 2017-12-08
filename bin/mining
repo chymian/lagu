@@ -6,7 +6,7 @@ PRG=cpuminer
 usage() {
 echo "usage: `basename $0` <command>"
 echo "command:
-	start	Start mining
+	start	Start mining (and download config-file)
 	stop	Stop mining
 	restart Restart mining
 	enable	Enable autostart & Watchdog
