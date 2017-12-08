@@ -37,11 +37,12 @@ Without an remote.conf, the miner don't try to download a remote config-file.
 
 
 ```
-ssh rig-xxxxxx (or on win use putty)
+ssh rig-xxxxxx # or on win use putty
 cd lagu
 rm lagu.conf remote.conf
 nano local.conf
 ```
+
 #### If you have more SBCs and access to an webserver
 Upload the config-file to the webserver and let the rigs download them before starting to mine.  
 In this scenario, SSH to every SDB once and use an editor of your choice to write the link of the config-file 
@@ -56,7 +57,8 @@ cd lagu
 nano remote.conf
 ```
 
-The miner first reads local.conf, and then, if remote.conf exists, downloads lagu.conf and reads that overwriting the "defaults" in local.conf.
+The miner first reads ```local.conf```, and then, if ```remote.conf``` exists, downloads the conf file from the link in  
+```remote.conf``` to ```lagu.conf``` and reads that, overwriting the "defaults" in local.conf.
 
 
 ### Grouping SBCs
