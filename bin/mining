@@ -29,7 +29,7 @@ start() {
 	APP=$(ps aux | grep -v grep | grep $PRG)
 	if [ -z "$APP" ]; then
 		echo "Restart miner"
-		screen -dmS mining $BASEDIR/bin/cpuminer -a $ALG -u $WALLET -o ${PROT}${POOL1} -p $POOLPASSWD1  $THREADS $SYS $APIBIND $APIALLOW $DEBUG $NOCOLOR || exit 2
+		screen -dmS mining $BASEDIR/bin/cpuminer -a $ALG -u $WALLET1 -o ${PROT}${POOL1} -p $POOLPASSWD1  $THREADS $SYS $APIBIND $APIALLOW $DEBUG $NOCOLOR || exit 2
 	fi
 }
 
