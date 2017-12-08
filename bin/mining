@@ -3,7 +3,7 @@
 BASEDIR=$HOME/lagu
 PRG=cpuminer
 
-useage() {
+usage() {
 echo usage $0 command
 echo "command:
 	start	Start mining
