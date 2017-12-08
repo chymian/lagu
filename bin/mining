@@ -4,7 +4,7 @@ BASEDIR=$HOME/lagu
 PRG=cpuminer
 
 usage() {
-echo usage `basename $0` <command>
+echo "usage `basename $0` <command>"
 echo "command:
 	start	Start mining
 	stop	Stop mining
