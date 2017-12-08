@@ -57,12 +57,12 @@ cd lagu
 nano remote.conf
 ```
 
-The miner first reads ```local.conf``` (if it exists) and then, if ```remote.conf``` exists, downloads the conf file from the link in  
-```remote.conf``` to ```lagu.conf``` and reads that, overwriting the "defaults" in local.conf.
+The miner first reads ```local.conf``` (if it exists) and then, if ```remote.conf``` exists, downloads the confg-file from the link in  
+```remote.conf``` to ```lagu.conf``` and reads that, "overwriting" the "defaults" in local.conf.
 
 
 ### Grouping SBCs
-The name of the config-file, which resides on the webserver can be freely choosen. So, with different ```remote.conf``` on different SBCs, 
+The name of the config-file which resides on the webserver can be freely choosen. So, with different ```remote.conf``` on different SBCs, 
 you can let them downlowd different config-files and so group multiples SBCs together to i.e mine on different pools.
 
 
