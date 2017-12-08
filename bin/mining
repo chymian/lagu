@@ -16,7 +16,9 @@ echo "command:
 }
 
 start() {
-	source $BASEDIR/local.conf
+	[ -f $BASEDIR/local.conf ] && {
+		source $BASEDIR/local.conf
+	}
 
 	# get actual config, if remote.conf is configured
 	if [ -f $BASEDIR/remote.conf ]; then
