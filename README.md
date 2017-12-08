@@ -22,18 +22,19 @@ There is a user lagu (pw: lagu) which is used for mining.
 The root password is set to ```.pw_lagu```. I's recommended to change both passwords with ```sudo passwd <user>``` on your first login.  
 You can ssh to your SBC (Windows user use i.e. PUTTY) and adapt the config.
 
-* If you have more SBCs on which you want to mine and access to a webserver, it might be easiest too upload a config-file to the webserver and 
-let the rigs download them before starting to mine. So you have only config to take care of in case you want to switch Pools, etc.  
+* If you have more SBCs on which you want to mine and access to a webserver, it might be easiest to upload a config-file to the webserver and 
+let the rigs download them before starting to mine. So you have only have to take care of one config in case you want to switch Pools, etc.  
 In this scenario, SSH to every SDB once and use an editor of your choice to write the link of the config-file into the file lagu/remote.conf  
 
 ```
-ssh rig-abcdef # or use putty on win
+ssh rig-xxxxxx # or use putty on win
 cd lagu
 nano remote.conf
 ```
 
-Download the config-file from http://lagu.eb8.org/lagu/template.conf to your workstation, adapt it and upload it to your webserver 
-so that it ends up in the location which you referred in ```remote.conf```
+Download the config-file from http://lagu.eb8.org/lagu/template.conf to your workstation, change POOLx and WALLETx to your needs and and upload it to your webserver 
+so that it ends up in the location which you referred in ```remote.conf```  
+HINT: at the moment, only POOL1, POOLPASSWD1 and WALLET1 are used.
 
 
 * If you have only one or two SBCs or no access to an Webserver, rename the file lagu.conf to local.conf and adapt it to your needs.  
