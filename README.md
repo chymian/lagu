@@ -10,7 +10,7 @@ In this repository is the Miner (see https://github.com/tpruvot/cpuminer-multi) 
 config-file from an central location on every start of the miner, stop mining and enable/disable a watchdog-style process-mgmt.  
 
 ## Preparing the microSD card  
-The Image can be downloaded from [here](http://lagu.eb8.org/lagu/)  
+The Image can be downloaded from [here](http://lagu.eb8.org/lagu/).  
 Unizp it with 7zip and use etcher or other SW to write it to an microSD card.
 
 
@@ -67,7 +67,7 @@ The name of the config-file which resides on the webserver can be freely choosen
 you can let them downlowd different config-files and so group multiples SBCs together to i.e mine on different pools.
 
 
-### Activate new config
+### Activate new config  
 To activate a new config, restart miner:  
 ```
 mining restart
@@ -80,7 +80,7 @@ sudo reboot
 ```
 
 
-## Mining command
+## Mining command  
 
 ```
 mining --help
@@ -93,4 +93,10 @@ command:
 	disable Disable autostart & Watchdog
 	update  Update lagu-rig sw from git
 ```
+
+## Connection to miners Output  
+To see the output an log of the miner, you can connect to the screen session with ```screen -r```. 
+To leave the session, press ```<CTRL> -A D```  
+If you use ```<CTRL>-C```, the miner will stop.  It will start again after 5 min, if you didn't ```mining disable```.  
+
 
