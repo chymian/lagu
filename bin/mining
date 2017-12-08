@@ -78,6 +78,9 @@ case $1 in
 
 	update) update
 		;;
+
+	*|--help|-h) usage
+		;;
 esac
 
 exit 0
