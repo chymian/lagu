@@ -3,13 +3,14 @@
 This Project is to test Mining on div. Arm v7 (32bit) and Arm v8 (64bit) SBC-Boards.
 Inspired by the Electroneum Project and their intent to mine their Cryptonight-Based Coin ETN on mobile Phones.
 
-At the moment, we started off with Arm v7 (32bit) based Odroid XU4 (MC1,HC1) from hardkernel.org.  
+At the moment, we started off with Arm v7 (32bit) Exynos5 Octa based Odroid XU4/MC1/HC1 from http://hardkernel.com.  
 Others to follow.
 
-In this repository is the Miner (see https://github.com/tpruvot/cpuminer-multi) and a little mimik for downloading a  
+In this repository is the Miner (see https://github.com/tpruvot/cpuminer-multi) and a little mimik for downloading a 
 config-file from an central location on every start of the miner, stop mining and enable/disable a watchdog-style process-mgmt.  
 
-The Image can be downloaded from http://lagu.eb8.org/lagu/
+## Preparing the microSD card  
+The Image can be downloaded from http://lagu.eb8.org/lagu/  
 Unizp it with 7zip and use etcher or other SW to write it to an microSD card.
 
 
