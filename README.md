@@ -6,7 +6,7 @@ Inspired by the Electroneum Project and their intent to mine their Cryptonight-B
 Our first take is the Arm v7 (32bit) Exynos5 Octa based Odroid XU4/MC1/HC1 from [hardkernel.com](http://hardkernel.com).  
 Others to follow.
 
-In this repository is the Miner (see https://github.com/tpruvot/cpuminer-multi) and a little mimik for downloading a 
+In this repository is the Miner (see https://github.com/tpruvot/cpuminer-multi) and a little code around it for downloading a 
 config-file from an central location on every start of the miner, stop mining and enable/disable a watchdog-style process-mgmt.  
 
 ## Preparing the microSD card  
