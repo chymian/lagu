@@ -8,7 +8,7 @@ echo "PATH=\$PATH:$BASEDIR/bin" >> ~/.profile
 
 # create initial configs
 cd $BASEDIR
-cp lib/local.conf .
+cp lib/template.conf local.conf
 cp lib/remote.conf .
 
 
