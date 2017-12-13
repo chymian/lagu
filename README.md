@@ -26,7 +26,8 @@ You can ssh to your SBC (Windows user use i.e. PUTTY) and adapt the config.
 
 ### Configration Template
 Download the config-file from [here](http://lagu.eb8.org/lagu/template.conf) to your workstation, change POOLx and WALLETx to your needs.  
-HINT: at the moment, only POOL1, POOLPASSWD1 and WALLET1 are used.
+HINT: at the moment, only POOL1, POOLPASSWD1 and WALLET1 are used.  
+HINT: Windows User use [notepad++](http://notepad-plus.sourceforge.net/uk/site.htm) or similar to edit the Unix-style config-files  
 
 
 #### If you have only one or two SBCs or no access to an webserver  
